@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #e74c3c;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased; }
+
+.welcome {
+  background: url("../img/header-bg.jpeg");
+  background-size: cover;
+  display: block;
+  padding: 80px 5px;
+  text-align: center; }
+  .welcome .btn-buy-ticket {
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color .1s ease-in; }
+    .welcome .btn-buy-ticket:focus, .welcome .btn-buy-ticket:hover, .welcome .btn-buy-ticket:active {
+      border-color: #27ae60;
+      color: #fff;
+      background-color: #27ae60; }
+
+.navbar {
+  border-radius: 0;
+  border: none; }
+  .navbar .main-nav {
+    list-style: none;
+    margin: 0;
+    text-align: center; }
+    .navbar .main-nav li {
+      display: inline-block; }
+      .navbar .main-nav li a {
+        color: #000;
+        padding: 15px;
+        display: inline-block; }
+
+.schedule {
+  padding: 40px 15px; }
+  .schedule h3 {
+    text-align: center; }
+  .schedule .schedule-list {
+    max-width: 500px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto; }
+    .schedule .schedule-list .day {
+      display: block;
+      margin-bottom: 20px; }
+      .schedule .schedule-list .day .event {
+        margin-bottom: 10px; }
+        .schedule .schedule-list .day .event .title {
+          font-size: 18px;
+          font-weight: 700; }
+        .schedule .schedule-list .day .event .agenda {
+          margin-left: 30px; }
+
+.speakers {
+  background-color: #000;
+  padding: 40px 15px; }
+  .speakers h3 {
+    text-align: center; }
+  .speakers .speakers-list {
+    text-align: center; }
+
+.prices {
+  padding: 40px 15px; }
+  .prices h3 {
+    text-align: center; }
+  .prices .price-table {
+    padding-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
+    .prices .price-table .panel {
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid #fff; }
+      .prices .price-table .panel .panel-heading {
+        color: #fff;
+        border-radius: 0;
+        background-color: white;
+        color: #E74C3C;
+        border-radius: 0;
+        border: none; }
+      .prices .price-table .panel .panel-footer {
+        background-color: transparent;
+        border-radius: 0; }
+        .prices .price-table .panel .panel-footer .btn-buy-ticket {
+          border-radius: 0;
+          background-color: rgba(255, 255, 255, 0.2);
+          border: 2px solid #fff;
+          color: #fff;
+          padding: 10px 20px;
+          display: block;
+          transition: background-color .1s ease-in; }
+          .prices .price-table .panel .panel-footer .btn-buy-ticket:focus, .prices .price-table .panel .panel-footer .btn-buy-ticket:hover, .prices .price-table .panel .panel-footer .btn-buy-ticket:active {
+            border-color: #27ae60;
+            color: #fff;
+            background-color: #27ae60; }
+
+#payment-form {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+  #payment-form input {
+    color: #000; }

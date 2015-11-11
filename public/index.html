@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <title>UX Dustri - The World's Best UX Conference</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+<body>
+    <header>
+        <section class="welcome">
+            <div class="intro">
+                <h1 class="text-center">UXDustri 2016</h1>
+                <p>A user interface and user experience conference for higher ed, libraries, and museums.</p>
+                <a href="#prices" class="btn btn-default btn-buy-ticket">Buy Ticket Now</a>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="main-nav">
+                    <li>
+                        <a href="#schedule">Schedule</a>
+                    </li>
+                    <li>
+                        <a href="#speakers">Speakers</a>
+                    </li>
+                    <li>
+                        <a href="#prices">Prices</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="schedule" id="schedule">
+        <h3>Schedule</h3>
+        <div class="schedule-list">
+            <div class="day">
+                <div class="event">
+                    <div class="title">9:30AM &middot; Welcome</div>
+                    <ul class="agenda">
+                        <li class="agenda-item">Live Performance Korinami + Joe Ferrari.</li>
+                        <li class="agenda-item">Opening/Welcome by founders: Matteo Penzo + Leandro Agrò</li>
+                        <li class="agenda-item">10 years of Frontiers of Interaction in 3 minutes (video)</li>
+                    </ul>
+                </div>
+                <div class="event">
+                    <div class="title">10:30AM &middot; Coffee Break</div>
+                </div>
+                <div class="event">
+                    <div class="title">11:00AM &middot; David Rose, Entrepreneur and Instructor at MIT</div>
+                </div>
+                <div class="event">
+                    <div class="title">12:00PM &middot; Peter Hobolt Jensen, Director, GM, Digital Innovation, Moleskine</div>
+                </div>
+                <div class="event">
+                    <div class="title">12:30PM &middot; John Vary, Innovation Manager, John Lewis</div>
+                </div>
+                <div class="event">
+                    <div class="title">1:00PM &middot; Lunch Break</div>
+                </div>
+                <div class="event">
+                    <div class="title">2:00PM &middot; Theresa Neil, Mobile Design For The “Non-Consumer” World</div>
+                </div>
+                <div class="event">
+                    <div class="title">3:00PM &middot; Eric Schaffer, How UX Can Transform Your Company Into A Market Leader (Even Without Steve Jobs)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="speakers" id="speakers">
+        <h3>Speakers</h3>
+        <div class="speakers-list">
+            David Rose // Peter Hobolt Jensen // John Vary // Theresa Neil // Eric Schaffer
+        </div>
+    </section>
+    
+    <section class="prices" id="prices">
+        <h3>Prices</h3>
+        <div class="price-table">
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>$129</h1>
+                    </div>
+                    <div class="panel-body">Basic</div>
+                    <div class="panel-footer">
+                        <a href="#" class="btn btn-success btn-buy-ticket" data-price="12900" data-level="Basic">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>$199</h1>
+                    </div>
+                    <div class="panel-body">Premium * All Access</div>
+                    <div class="panel-footer">
+                        <a href="#" class="btn btn-success btn-buy-ticket" data-price="19900" data-level="Premium">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://checkout.stripe.com/checkout.js"></script>
+        <script src="js/app.js"></script>
+    </footer>
+</body>
+</html>

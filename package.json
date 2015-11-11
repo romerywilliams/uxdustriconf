@@ -1,0 +1,28 @@
+{
+  "name": "uxdustri",
+  "version": "1.0.0",
+  "description": "UXDustri Conference",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "connect": "^3.4.0",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "keywords": [
+    "node",
+    "uxdustri",
+    "conference"
+  ],
+  "license": "ISC"
+}

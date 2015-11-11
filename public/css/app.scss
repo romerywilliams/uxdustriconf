@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e74c3c;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.welcome {
+    background: url('../img/header-bg.jpeg');
+    background-size: cover;
+    display: block;
+    padding: 80px 5px;
+    text-align: center;
+
+    .btn-buy-ticket {
+        border-radius: 1px;
+        background-color: rgba(255, 255, 255, 0.20);
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 10px 20px;
+        margin-top: 10px;
+        transition: background-color .1s ease-in;
+
+        &:focus, &:hover, &:active {
+            border-color: #27ae60;
+            color: #fff;
+            background-color: #27ae60;
+        }
+    }
+}
+
+.navbar {
+    border-radius: 0;
+    border: none;
+
+    .main-nav {
+        list-style: none;
+        margin: 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+
+            a {
+                color: #000;
+                padding: 15px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.schedule {
+    padding: 40px 15px;
+
+    h3 {
+        text-align: center;
+    }
+
+    .schedule-list {
+        max-width: 500px;
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .day {
+            display: block;
+            margin-bottom: 20px;
+
+            .event {
+                margin-bottom: 10px;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .agenda {
+                    margin-left: 30px;
+
+                    .agenda-item {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.speakers {
+    background-color: #000;
+    padding: 40px 15px;
+
+    h3 {
+        text-align: center;
+    }
+
+    .speakers-list {
+        text-align: center;
+    }
+}
+
+.prices {
+    padding: 40px 15px;
+
+    h3 {
+        text-align: center;
+    }
+    
+    .price-table {
+        padding-top: 20px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .panel {
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            text-align: center;
+            background-color: transparent;
+            border: 1px solid #fff;
+
+            .panel-heading {
+                color: #fff;
+                border-radius: 0;
+                background-color: white;
+                color: #E74C3C;
+                border-radius: 0;
+                border: none;
+            }
+
+            .panel-footer {
+                background-color: transparent;
+                border-radius: 0;
+
+                .btn-buy-ticket {
+                    border-radius: 0;
+                    background-color: rgba(255, 255, 255, 0.20);
+                    border: 2px solid #fff;
+                    color: #fff;
+                    padding: 10px 20px;
+                    display: block;
+                    transition: background-color .1s ease-in;
+
+                    &:focus, &:hover, &:active {
+                        border-color: #27ae60;
+                        color: #fff;
+                        background-color: #27ae60;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#payment-form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    input {
+        color: #000;
+    }
+}
