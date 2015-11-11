@@ -1,5 +1,4 @@
 var express = require( 'express' );
-var PORT    = 8080;
 var app     = express();
 
 app.use(express.static(__dirname + '/public'));
@@ -10,6 +9,4 @@ app.post('/checkout', function( req, res ) {
     res.end();
 });
 
-app.listen(PORT, function() {
-    console.log( "Listening on port: %s", PORT );
-});
+app.listen( process.env.PORT || 8888 );
