@@ -1,16 +1,23 @@
 (function() {
+    var price, level;
     var handler = StripeCheckout.configure({
-        key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+        key: 'pk_live_jcbE8jjCSfjqdtbj53tmTstr',
         image: 'img/icon.png',
         locale: 'auto',
         token: function( token ) {
-            $.post('/checkout', { token_id: token.id, token: token });
+            $.post('/checkout', {
+                checkout: {
+                    token: token,
+                    amount: price,
+                    college_discount: !!$( '.college_discount' ).length
+                }
+            });
         }
     });
 
     $( '.prices .btn-buy-ticket' ).on('click', function( e ) {
-        var price = +$( this ).data( 'price' ),
-            level =  $( this ).data( 'level' );
+        price = +$( this ).data( 'price' );
+        level =  $( this ).data( 'level' );
 
         handler.open({
             name: 'UXDustri 2016',
@@ -30,6 +37,6 @@
     $( '.btn-buy-ticket:first' ).on('click', function() {
         $( 'html, body' ).animate({
             scrollTop: $( '#prices' ).offset().top
-         }, 1000);
+        }, 1000);
     });
 })();
