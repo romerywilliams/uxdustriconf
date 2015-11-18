@@ -18,15 +18,11 @@ app.post('/checkout', function( req, res ) {
 		retryKey = crypto.randomBytes( 20 ).toString( 'hex' ),
 		amount   = checkout.amount;
 
-	if ( checkout.college_discount ) {
-		amount = 100;
-	}
-
 	stripe.charges.create({
 		amount: amount,
 		currency: 'usd',
 		source: checkout.token.id, // obtained with Stripe.js
-		description: "UXDustri Ticket"
+		description: 'UXDustri Ticket'
 	}, {
 	  	idempotency_key: retryKey
 	}, function( err, charge ) {
